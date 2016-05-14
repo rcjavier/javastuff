@@ -92,22 +92,29 @@ class Num2Words{
 
 		// prints 1-999
 		// for(int i=1; i<1000; i++){
-		// 	System.out.println(toWords(i));
+		// 	cout(toWords999(i));
 		// }
 
 		System.out.print("Enter a number: ");
 		int num = (int)(Long.parseLong(br.readLine()));
 
-		System.out.println(toWords(num));
+		cout(toWords999(num));
 		br=null;
 	}
+
+	private static void cout(Object primitive){
+		// println shorthand
+		System.out.println(primitive);
+	}
+
+
 
 	private static String getLast3Digits(int num){
 
 		return "";
 	}
 
-	private static String toWords(int num){
+	private static String toWords999(int num){
 		String retVal;
 
 
@@ -133,13 +140,6 @@ class Num2Words{
 		return retVal;
 	}
 
-	private static void print(int num){
-		System.out.println(num);
-	}
-
-	private static void print(String str){
-		System.out.println(str);
-	}
 
 	private static String between20and99(int num){
 		
