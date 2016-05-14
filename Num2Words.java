@@ -2,103 +2,104 @@ import java.io.*;
 class Num2Words{
 	private static	String[] suffixes = new String[] {
 				""
-				," thousand"
-				," million"
-				," billion"
-				," trillion"
-				," quadrillion"
-				," quintillion"
-				," sextillion"
-				," septillion"
-				," octillion"
-				," nonillion"
-				," decillion"
-				," undecillion"
-				," duodecillion"
-				," tredecillion"
-				," quattuordecillion"
-				," quinquadecillion"
-				," sedecillion" 
-				," septendecillion"
-				," octodecillion"
-				," novendecillion"
-				," vigintillion"
-				," unvigintillion"
-				," duovigintillion"
-				," tresvigintillion"
-				," quattuorvigintillion"
-				," quinquavigintillion"
-				," sesvigintillion"
-				," septemvigintillion"
-				," octovigintillion"
-				," novemvigintillion"
-				," trigintillion"
-				," untrigintillion"
-				," duotrigintillion"
-				," trestrigintillion"
-				," quattuortrigintillion"
-				," quinquatrigintillion"
-				," sestrigintillion"
-				," septentrigintillion"
-				," octotrigintillion"
-				," noventrigintillion"
-				," quadragintillion"
-				," unquadragintillion"
-				," duoquadragintillion"
-				," tresquadragintillion"
-				," quattuorquadragintillion"
-				," quinquaquadragintillion"
-				," sesquadragintillion"
-				," septenquadragintillion"
-				," octoquadragintillion"
-				," novenquadragintillion"
-				," quinquagintillion"
-				," unquinquagintillion"
-				," duoquinquagintillion"
-				," tresquinquagintillion"
-				," quattuorquinquagintillion"
-				," quinquaquinquagintillion"
-				," sesquinquagintillion"
-				," septenquinquagintillion"
-				," octoquinquagintillion"
-				," novenquinquagintillion"
-				," sexagintillion"
-				," unsexagintillion"
-				," duosexagintillion"
-				," tresexagintillion"
-				," quattuorsexagintillion"
-				," quinquasexagintillion"
-				," sesexagintillion"
-				," septensexagintillion"
-				," octosexagintillion"
-				," novensexagintillion"
-				," septuagintillion"
-				," unseptuagintillion"
-				," duoseptuagintillion"
-				," treseptuagintillion"
-				," quattuorseptuagintillion"
-				," quinquaseptuagintillion"
-				," seseptuagintillion"
-				," septenseptuagintillion"
-				," octoseptuagintillion"
-				," novenseptuagintillion"
-				," octogintillion"
-				," unoctogintillion"
-				," duooctogintillion"
+				," thousand,"
+				," million,"
+				," billion,"
+				," trillion,"
+				," quadrillion,"
+				," quintillion,"
+				," sextillion,"
+				," septillion,"
+				," octillion,"
+				," nonillion,"
+				," decillion,"
+				," undecillion,"
+				," duodecillion,"
+				," tredecillion,"
+				," quattuordecillion,"
+				," quinquadecillion,"
+				," sedecillion," 
+				," septendecillion,"
+				," octodecillion,"
+				," novendecillion,"
+				," vigintillion,"
+				," unvigintillion,"
+				," duovigintillion,"
+				," tresvigintillion,"
+				," quattuorvigintillion,"
+				," quinquavigintillion,"
+				," sesvigintillion,"
+				," septemvigintillion,"
+				," octovigintillion,"
+				," novemvigintillion,"
+				," trigintillion,"
+				," untrigintillion,"
+				," duotrigintillion,"
+				," trestrigintillion,"
+				," quattuortrigintillion,"
+				," quinquatrigintillion,"
+				," sestrigintillion,"
+				," septentrigintillion,"
+				," octotrigintillion,"
+				," noventrigintillion,"
+				," quadragintillion,"
+				," unquadragintillion,"
+				," duoquadragintillion,"
+				," tresquadragintillion,"
+				," quattuorquadragintillion,"
+				," quinquaquadragintillion,"
+				," sesquadragintillion,"
+				," septenquadragintillion,"
+				," octoquadragintillion,"
+				," novenquadragintillion,"
+				," quinquagintillion,"
+				," unquinquagintillion,"
+				," duoquinquagintillion,"
+				," tresquinquagintillion,"
+				," quattuorquinquagintillion,"
+				," quinquaquinquagintillion,"
+				," sesquinquagintillion,"
+				," septenquinquagintillion,"
+				," octoquinquagintillion,"
+				," novenquinquagintillion,"
+				," sexagintillion,"
+				," unsexagintillion,"
+				," duosexagintillion,"
+				," tresexagintillion,"
+				," quattuorsexagintillion,"
+				," quinquasexagintillion,"
+				," sesexagintillion,"
+				," septensexagintillion,"
+				," octosexagintillion,"
+				," novensexagintillion,"
+				," septuagintillion,"
+				," unseptuagintillion,"
+				," duoseptuagintillion,"
+				," treseptuagintillion,"
+				," quattuorseptuagintillion,"
+				," quinquaseptuagintillion,"
+				," seseptuagintillion,"
+				," septenseptuagintillion,"
+				," octoseptuagintillion,"
+				," novenseptuagintillion,"
+				," octogintillion,"
+				," unoctogintillion,"
+				," duooctogintillion,"
 	};
 
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-		// prints 1-999
-		// for(int i=1; i<1000; i++){
-		// 	cout(toWords999(i));
+		// prints samples
+		// if(max>0){
+		// 	for(int i=1; i<1000; i++){
+		// 		cout(toWords(i));
+		// 	}
 		// }
-
 		System.out.print("Enter a number: ");
 		int num = (int)(Long.parseLong(br.readLine()));
 
-		cout(toWords999(num));
+		cout(toWords(num));
 		br=null;
 	}
 
@@ -108,36 +109,47 @@ class Num2Words{
 	}
 
 
-
-	private static String getLast3Digits(int num){
-
-		return "";
-	}
-
-	private static String toWords999(int num){
-		String retVal;
+	private static String toWords(long num){
+		String retVal="";
 
 
+		int suffix=0;
 
-		// get below 100 part
-		int tmp = num%100;
-		
+		int tmp=0;	//tens and ones
+		// process groups of 3, repeat until all digits are done
+		int nums3=0;
+		String tmpVal = "";
+		while(num>0){
+			// get groups of 3 digits
+			nums3=(int)(num%1000);
 
-		if(tmp<11){
-			retVal=between1and10(tmp);
-		}else if(tmp<20){
-			retVal=between10and20(tmp);
-		}else{
-			retVal=between20and99(tmp);
+			if(nums3>0){
+				// save the next groups, if any, for later
+				num-=nums3;
+				// handle the last 2 digits
+				tmp=nums3%100;
+				if(tmp<11){
+					tmpVal = getOnes(tmp);
+				}else if(tmp<20){
+					tmpVal = getTeens(tmp);
+				}else{
+					tmpVal = between20and99(tmp);
+				}
+
+				// handle the hundreds
+				tmp=nums3/100;
+				if(tmp>0){
+					tmpVal = getOnes(tmp) + " hundred" + tmpVal;	
+				}
+			}
+			// add suffix, prepare next suffix
+			retVal = tmpVal + suffixes[suffix++] + retVal;
+			num/=1000;
+
+
 		}
 
-		// get the hundreds
-		num/=100;
-		if(num>0){
-			retVal = between1and10(num) + " hundred" + retVal;	
-		}
-
-		return retVal;
+		return retVal.toString();
 	}
 
 
@@ -146,16 +158,22 @@ class Num2Words{
 		String retVal="";
 
 		//get ones
-		int tmp=num%10;
+		int ones=num%10;
 
 		//get tens
-		num = num-tmp;
-		retVal = between20and100(num) + between1and10(tmp);
+		int tens = num-ones;
+		String dashOrNone="";
+		if(ones>0){
+			dashOrNone="-";
+		}
+
+		retVal = getTens(tens) + dashOrNone + getOnes(ones).trim();
 		return retVal;
 	}
 
-	private static String between1and10(int num){
-				String retVal="";
+	private static String getOnes(int num){
+		String retVal="";
+		
 		switch(num){
 			case 1: retVal=" one";
 				break;
@@ -181,7 +199,7 @@ class Num2Words{
 		return retVal;
 	}
 
-	private static String between20and100(int num){
+	private static String getTens(int num){
 		
 		String retVal="";
 		switch(num){
@@ -206,7 +224,7 @@ class Num2Words{
 	}
 
 
-	private static String between10and20(int num){
+	private static String getTeens(int num){
 		String retVal="";
 		switch(num){
 			case 11: retVal=" eleven";
