@@ -87,6 +87,10 @@ class Num2WordsBISB{
 				," octogintillion,"
 				," unoctogintillion,"
 				," duooctogintillion,"
+				," tresoctogintillion,"
+				," quattuoroctogintillion,"
+				," quinquaoctogintillion,"
+				
 	};
 
 	public static void main(String[] args) throws Exception{
